@@ -1,4 +1,11 @@
 {
   "name": "reanimated-tut",
-  "slug": "reanimated-tut"
+  "slug": "reanimated-tut",
+  "scheme": "reanimated-tut",
+  "plugins": [
+    "expo-router"
+  ],
+  "web": {
+    "bundler": "metro"
+  }
 }
