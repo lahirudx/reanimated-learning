@@ -7,6 +7,7 @@ import Animated, {
 } from "react-native-reanimated";
 import { Gesture, GestureDetector } from "react-native-gesture-handler";
 import { Stack } from "expo-router";
+import BackButton from "components/BackButton";
 
 const SIZE = 90;
 const CIRCLE_RADIUS = SIZE * 2;
@@ -45,7 +46,7 @@ export default function PanGestureMore() {
 
   return (
     <View style={styles.container}>
-      <Stack.Screen options={{ title: "Pan Gesture More" }} />
+      <BackButton />
       <View style={styles.circle}>
         <GestureDetector gesture={panGesture}>
           <Animated.View style={[styles.square, rStyles]} />

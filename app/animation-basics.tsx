@@ -1,3 +1,4 @@
+import BackButton from "components/BackButton";
 import { Stack } from "expo-router";
 import { useEffect } from "react";
 import { StyleSheet, Text, View } from "react-native";
@@ -44,7 +45,8 @@ export default function BasicsScreen() {
 
   return (
     <View style={styles.container}>
-      <Stack.Screen options={{ title: "Animation Basics" }} />
+      <BackButton />
+
       <Animated.View
         style={[
           { height: SIZE, width: SIZE, backgroundColor: "blue" },

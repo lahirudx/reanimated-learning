@@ -1,8 +1,11 @@
 import LinkButton from "components/LinkButton";
 import { Link, Stack } from "expo-router";
 import { Button, View } from "react-native";
+import { useSafeAreaInsets } from "react-native-safe-area-context";
 
 export default function MainScreen() {
+  const { top } = useSafeAreaInsets();
+
   return (
     <View
       style={{
@@ -10,7 +13,7 @@ export default function MainScreen() {
         alignItems: "center",
         justifyContent: "flex-start",
         flexDirection: "column",
-        paddingVertical: 10,
+        paddingVertical: top + 10,
       }}
     >
       <Stack.Screen options={{ title: "Home" }} />
@@ -29,6 +32,7 @@ export default function MainScreen() {
           title="4. Interpolate with ScrollView"
           href="interpolate-with-scrollview"
         />
+        <LinkButton title="5. Interpolate Colors" href="interpolate-colors" />
       </View>
     </View>
   );

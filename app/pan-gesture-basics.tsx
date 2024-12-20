@@ -9,6 +9,7 @@ import Animated, {
 } from "react-native-reanimated";
 import { Gesture, GestureDetector } from "react-native-gesture-handler";
 import { Stack } from "expo-router";
+import BackButton from "components/BackButton";
 
 interface AnimatedPosition {
   x: SharedValue<number>;
@@ -84,7 +85,7 @@ export default function PanGestureBasics() {
 
   return (
     <View style={styles.container}>
-      <Stack.Screen options={{ title: "Pan Gesture Basics" }} />
+      <BackButton />
       <Animated.View
         style={[styles.circle, rGreenCircleStyle, { backgroundColor: "green" }]}
       />

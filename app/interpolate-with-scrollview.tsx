@@ -6,6 +6,7 @@ import Animated, {
 } from "react-native-reanimated";
 import { Stack } from "expo-router";
 import Page from "components/interpolateWithScrollView/Page";
+import BackButton from "components/BackButton";
 
 const WORDS = ["Hello", "React Native", "Developers"];
 
@@ -19,6 +20,7 @@ export default function InterpolateWithScrollView() {
   return (
     <>
       <Stack.Screen options={{ headerShown: false }} />
+      <BackButton />
       <Animated.ScrollView
         horizontal
         onScroll={scrollHandler}
