@@ -33,6 +33,7 @@ export default function MainScreen() {
           href="interpolate-with-scrollview"
         />
         <LinkButton title="5. Interpolate Colors" href="interpolate-colors" />
+        <LinkButton title="6. Pinch Gesture" href="pinch-gesture" />
       </View>
     </View>
   );
