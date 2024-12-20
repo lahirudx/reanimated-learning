@@ -10,11 +10,21 @@ export default function MainScreen() {
         alignItems: "center",
         justifyContent: "flex-start",
         flexDirection: "column",
-        paddingVertical: 100,
+        paddingVertical: 10,
       }}
     >
-      <LinkButton title="1. Animation Basics" href="animation-basics" />
-      <LinkButton title="2. Pan Gesture Basics" href="pan-gesture-basics" />
+      <View
+        style={{
+          flex: 1,
+          justifyContent: "flex-start",
+          alignItems: "flex-start",
+          flexDirection: "column",
+        }}
+      >
+        <LinkButton title="1. Animation Basics" href="animation-basics" />
+        <LinkButton title="2. Pan Gesture Basics" href="pan-gesture-basics" />
+        <LinkButton title="3. Pan Gesture More" href="pan-gesture-more" />
+      </View>
     </View>
   );
 }

@@ -7,11 +7,7 @@ import Animated, {
   withSpring,
   SharedValue,
 } from "react-native-reanimated";
-import {
-  Gesture,
-  GestureDetector,
-  GestureHandlerRootView,
-} from "react-native-gesture-handler";
+import { Gesture, GestureDetector } from "react-native-gesture-handler";
 
 interface AnimatedPosition {
   x: SharedValue<number>;
@@ -86,23 +82,17 @@ export default function PanGestureBasics() {
   });
 
   return (
-    <GestureHandlerRootView>
-      <View style={styles.container}>
-        <Animated.View
-          style={[
-            styles.circle,
-            rGreenCircleStyle,
-            { backgroundColor: "green" },
-          ]}
-        />
-        <Animated.View
-          style={[styles.circle, rRedCircleStyle, { backgroundColor: "red" }]}
-        />
-        <GestureDetector gesture={gesture}>
-          <Animated.View style={[styles.circle, rBleCircleStyle]} />
-        </GestureDetector>
-      </View>
-    </GestureHandlerRootView>
+    <View style={styles.container}>
+      <Animated.View
+        style={[styles.circle, rGreenCircleStyle, { backgroundColor: "green" }]}
+      />
+      <Animated.View
+        style={[styles.circle, rRedCircleStyle, { backgroundColor: "red" }]}
+      />
+      <GestureDetector gesture={gesture}>
+        <Animated.View style={[styles.circle, rBleCircleStyle]} />
+      </GestureDetector>
+    </View>
   );
 }
 
