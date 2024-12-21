@@ -34,6 +34,7 @@ export default function MainScreen() {
         />
         <LinkButton title="5. Interpolate Colors" href="interpolate-colors" />
         <LinkButton title="6. Pinch Gesture" href="pinch-gesture" />
+        <LinkButton title="6. Double Tap Gesture" href="double-tap-gesture" />
       </View>
     </View>
   );
