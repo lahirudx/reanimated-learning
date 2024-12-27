@@ -39,6 +39,7 @@ export default function MainScreen() {
           title="8. Pan Gesture ScrollView"
           href="pan-gesture-scrollview"
         />
+        <LinkButton title="9. Circular Progress" href="circular-progress" />
       </View>
     </View>
   );
