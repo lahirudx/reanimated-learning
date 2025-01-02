@@ -40,6 +40,7 @@ export default function MainScreen() {
           href="pan-gesture-scrollview"
         />
         <LinkButton title="9. Circular Progress" href="circular-progress" />
+        <LinkButton title="10. Color Picker" href="color-picker" />
       </View>
     </View>
   );
