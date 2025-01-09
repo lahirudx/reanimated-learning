@@ -41,6 +41,7 @@ export default function MainScreen() {
         />
         <LinkButton title="9. Circular Progress" href="circular-progress" />
         <LinkButton title="10. Color Picker" href="color-picker" />
+        <LinkButton title="10. Swipe to delete" href="swipe-to-delete" />
       </View>
     </View>
   );

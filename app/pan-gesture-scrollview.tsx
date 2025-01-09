@@ -8,6 +8,7 @@ import Animated, {
   withDecay,
 } from "react-native-reanimated";
 import { Gesture, GestureDetector } from "react-native-gesture-handler";
+import BackButton from "@/components/BackButton";
 
 const titles = ["Hello", "Mobile", "Devs", "?"];
 
@@ -36,6 +37,7 @@ export default function PanGestureScrollView() {
 
   return (
     <View style={styles.container}>
+      <BackButton />
       <GestureDetector gesture={panGesture}>
         <Animated.View style={{ flex: 1, flexDirection: "row" }}>
           {titles.map((title, index) => (
